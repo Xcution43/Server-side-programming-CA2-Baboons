@@ -1,1 +1,38 @@
-!DOCTYPE
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel ="stylesheet" type="text/css" href="form_style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login Information</h2>
+        <form id="userInfoForm" action="/submit" method="POST">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstname" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastname" name="lastName" required>
+
+            <br> <br>
+
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType">
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+            </select>
+
+            <br> <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
