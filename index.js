@@ -14,35 +14,6 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/form.html');
 })
 
-//Defining a route
-// app.post('/submit', function(req, res){
-
-//     const {first_name, last_name, email_address, phone_number, eircode} = req.body;
-
-//     if(first_name && last_name && email_address && phone_number && eircode){
-
-//         const sql = "INSERT INTO mysql_table (first_name, last_name, email_address, phone_number, eircode)VALUES (?, ?, ?, ?, ?)" ;
-//         //Preparing SQL query for data
-//         connection.query(sql, [first_name, last_name, email_address, phone_number, eircode], function(err, result){
-
-//             if(err){
-//                 console.error("Error inserting data: ", err);
-//                 return res,req("Error: Could not insert data into the database");
-//             }
-
-//             res.redirect("/home.html");
-//             //Redirecting to the home page afer submission
-//         });
-
-//     }else{
-//         res.send("Please try again");
-//         //Sending error message for missing field
-//     }
-// });
-
-// app.get("/home", function(req, res){
-//     res.sendFile(__dirname + '/home.html');
-// });
 
 app.listen(3000, function(){
 
